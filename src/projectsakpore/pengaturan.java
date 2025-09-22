@@ -6,12 +6,12 @@ package projectsakpore;
 
 /**
  *
- * @author user
+ * @author HP
  */
 public class pengaturan extends javax.swing.JFrame {
 
     /**
-     * Creates new form pengaturan
+     * Creates new form profil
      */
     public pengaturan() {
         initComponents();
@@ -26,21 +26,326 @@ public class pengaturan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        Background_Kasir = new javax.swing.JPanel();
+        Kasir = new javax.swing.JLabel();
+        Tombol_Dashboard = new javax.swing.JButton();
+        Tombol_DataMaster = new javax.swing.JButton();
+        Tombol_Transaksi = new javax.swing.JButton();
+        Tombol_Pengaturan = new javax.swing.JButton();
+        garis_kasir = new javax.swing.JPanel();
+        Background_atas = new javax.swing.JPanel();
+        PT_SMEA = new javax.swing.JLabel();
+        PROFILE = new javax.swing.JLabel();
+        garis = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList<>();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jList4 = new javax.swing.JList<>();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Background_Kasir.setBackground(new java.awt.Color(153, 153, 153));
+
+        Kasir.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
+        Kasir.setForeground(new java.awt.Color(255, 255, 255));
+        Kasir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Kasir.setText("Kasir");
+
+        Tombol_Dashboard.setBackground(new java.awt.Color(153, 153, 153));
+        Tombol_Dashboard.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        Tombol_Dashboard.setForeground(new java.awt.Color(255, 255, 255));
+        Tombol_Dashboard.setText("Dashboard");
+        Tombol_Dashboard.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        Tombol_Dashboard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tombol_DashboardActionPerformed(evt);
+            }
+        });
+
+        Tombol_DataMaster.setBackground(new java.awt.Color(153, 153, 153));
+        Tombol_DataMaster.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        Tombol_DataMaster.setForeground(new java.awt.Color(255, 255, 255));
+        Tombol_DataMaster.setText("Data Master");
+        Tombol_DataMaster.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        Tombol_DataMaster.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tombol_DataMasterActionPerformed(evt);
+            }
+        });
+
+        Tombol_Transaksi.setBackground(new java.awt.Color(153, 153, 153));
+        Tombol_Transaksi.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        Tombol_Transaksi.setForeground(new java.awt.Color(255, 255, 255));
+        Tombol_Transaksi.setText("Transaksi");
+        Tombol_Transaksi.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        Tombol_Transaksi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tombol_TransaksiActionPerformed(evt);
+            }
+        });
+
+        Tombol_Pengaturan.setBackground(new java.awt.Color(153, 153, 153));
+        Tombol_Pengaturan.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
+        Tombol_Pengaturan.setForeground(new java.awt.Color(255, 255, 255));
+        Tombol_Pengaturan.setText("Pengaturan");
+        Tombol_Pengaturan.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        Tombol_Pengaturan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tombol_PengaturanActionPerformed(evt);
+            }
+        });
+
+        garis_kasir.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout garis_kasirLayout = new javax.swing.GroupLayout(garis_kasir);
+        garis_kasir.setLayout(garis_kasirLayout);
+        garis_kasirLayout.setHorizontalGroup(
+            garis_kasirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 115, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        garis_kasirLayout.setVerticalGroup(
+            garis_kasirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 5, Short.MAX_VALUE)
         );
+
+        javax.swing.GroupLayout Background_KasirLayout = new javax.swing.GroupLayout(Background_Kasir);
+        Background_Kasir.setLayout(Background_KasirLayout);
+        Background_KasirLayout.setHorizontalGroup(
+            Background_KasirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Background_KasirLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Background_KasirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Kasir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Tombol_Dashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Tombol_Transaksi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Tombol_DataMaster, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Tombol_Pengaturan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Background_KasirLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(garis_kasir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        Background_KasirLayout.setVerticalGroup(
+            Background_KasirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Background_KasirLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Kasir)
+                .addGap(1, 1, 1)
+                .addComponent(garis_kasir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Tombol_Dashboard, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Tombol_DataMaster, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Tombol_Transaksi, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Tombol_Pengaturan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(857, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(Background_Kasir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1080));
+
+        Background_atas.setBackground(new java.awt.Color(255, 255, 255));
+
+        PT_SMEA.setFont(new java.awt.Font("Segoe UI Historic", 0, 8)); // NOI18N
+        PT_SMEA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PT_SMEA.setText("PT SMEA NO SEITO DESU");
+
+        PROFILE.setFont(new java.awt.Font("Segoe UI Emoji", 1, 24)); // NOI18N
+        PROFILE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PROFILE.setText("DASHBOARD");
+
+        garis.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout garisLayout = new javax.swing.GroupLayout(garis);
+        garis.setLayout(garisLayout);
+        garisLayout.setHorizontalGroup(
+            garisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        garisLayout.setVerticalGroup(
+            garisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 4, Short.MAX_VALUE)
+        );
+
+        jLabel1.setText("Admin");
+
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jList1);
+
+        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane2.setViewportView(jList2);
+
+        jList3.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane3.setViewportView(jList3);
+
+        jList4.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane4.setViewportView(jList4);
+
+        jLabel2.setText("NAMA BARANG");
+
+        jLabel3.setText("STOK BARANG");
+
+        jLabel4.setText("TERJUAL");
+
+        jLabel5.setText("KATEGORI");
+
+        jButton1.setText("EDIT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("DELETE");
+
+        jButton3.setText("SIMPAN");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton2)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))
+                        .addGap(81, 81, 81)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))
+                        .addGap(85, 85, 85)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addGap(74, 74, 74)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(850, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(131, 131, 131)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap(636, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Background_atasLayout = new javax.swing.GroupLayout(Background_atas);
+        Background_atas.setLayout(Background_atasLayout);
+        Background_atasLayout.setHorizontalGroup(
+            Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Background_atasLayout.createSequentialGroup()
+                .addComponent(garis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(Background_atasLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(PT_SMEA, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(156, 156, 156))
+            .addGroup(Background_atasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Background_atasLayout.createSequentialGroup()
+                        .addComponent(PROFILE, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        Background_atasLayout.setVerticalGroup(
+            Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Background_atasLayout.createSequentialGroup()
+                .addComponent(PT_SMEA, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(PROFILE))
+                .addGap(18, 18, 18)
+                .addComponent(garis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        getContentPane().add(Background_atas, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 1810, 1080));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Tombol_DashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tombol_DashboardActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tombol_DashboardActionPerformed
+
+    private void Tombol_TransaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tombol_TransaksiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tombol_TransaksiActionPerformed
+
+    private void Tombol_DataMasterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tombol_DataMasterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tombol_DataMasterActionPerformed
+
+    private void Tombol_PengaturanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tombol_PengaturanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tombol_PengaturanActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -68,6 +373,13 @@ public class pengaturan extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(pengaturan.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -78,5 +390,33 @@ public class pengaturan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Background_Kasir;
+    private javax.swing.JPanel Background_atas;
+    private javax.swing.JLabel Kasir;
+    private javax.swing.JLabel PROFILE;
+    private javax.swing.JLabel PT_SMEA;
+    private javax.swing.JButton Tombol_Dashboard;
+    private javax.swing.JButton Tombol_DataMaster;
+    private javax.swing.JButton Tombol_Pengaturan;
+    private javax.swing.JButton Tombol_Transaksi;
+    private javax.swing.JPanel garis;
+    private javax.swing.JPanel garis_kasir;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
+    private javax.swing.JList<String> jList3;
+    private javax.swing.JList<String> jList4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     // End of variables declaration//GEN-END:variables
 }
