@@ -45,6 +45,15 @@ public class profile extends javax.swing.JFrame {
         MasukkanEMAIL = new javax.swing.JTextField();
         Nama1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        Logo3 = new javax.swing.JLabel();
+        Kelola_Pengguna1 = new javax.swing.JLabel();
+        Nama2 = new javax.swing.JLabel();
+        Nama3 = new javax.swing.JLabel();
+        MasukkanNama1 = new javax.swing.JTextField();
+        MasukkanEMAIL1 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        Nama4 = new javax.swing.JLabel();
+        MasukkanEMAIL2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -182,16 +191,20 @@ public class profile extends javax.swing.JFrame {
         Kelola_Pengguna.setText("KELOLA PENGGUNA :");
 
         Nama.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Nama.setText("NAMA");
+        Nama.setText("NAMA :");
 
+        MasukkanNama.setForeground(new java.awt.Color(204, 204, 204));
         MasukkanNama.setText("Masukkan Nama");
+        MasukkanNama.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         MasukkanNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MasukkanNamaActionPerformed(evt);
             }
         });
 
+        MasukkanEMAIL.setForeground(new java.awt.Color(204, 204, 204));
         MasukkanEMAIL.setText("Masukkan Email");
+        MasukkanEMAIL.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         MasukkanEMAIL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MasukkanEMAILActionPerformed(evt);
@@ -199,12 +212,64 @@ public class profile extends javax.swing.JFrame {
         });
 
         Nama1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        Nama1.setText("EMAIL");
+        Nama1.setText("EMAIL :");
 
+        jButton1.setBackground(new java.awt.Color(0, 51, 255));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Save");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        Logo3.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Downloads\\iconusername25px.png")); // NOI18N
+
+        Kelola_Pengguna1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        Kelola_Pengguna1.setText("GANTI PASSWORD");
+
+        Nama2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Nama2.setText("USERNAME :");
+
+        Nama3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Nama3.setText("PASSWORD :");
+
+        MasukkanNama1.setForeground(new java.awt.Color(204, 204, 204));
+        MasukkanNama1.setText("Masukkan Username");
+        MasukkanNama1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        MasukkanNama1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MasukkanNama1ActionPerformed(evt);
+            }
+        });
+
+        MasukkanEMAIL1.setForeground(new java.awt.Color(204, 204, 204));
+        MasukkanEMAIL1.setText("Masukkan Password");
+        MasukkanEMAIL1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        MasukkanEMAIL1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MasukkanEMAIL1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setBackground(new java.awt.Color(0, 51, 255));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("UBAH PASSWORD");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        Nama4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        Nama4.setText("SANDI :");
+
+        MasukkanEMAIL2.setForeground(new java.awt.Color(204, 204, 204));
+        MasukkanEMAIL2.setText("Masukkan Sandi");
+        MasukkanEMAIL2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
+        MasukkanEMAIL2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MasukkanEMAIL2ActionPerformed(evt);
             }
         });
 
@@ -223,23 +288,46 @@ public class profile extends javax.swing.JFrame {
                     .addGroup(Background_atasLayout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(tempat_foto)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(Logo2)
-                        .addGap(12, 12, 12)
                         .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(Background_atasLayout.createSequentialGroup()
-                                .addComponent(Nama)
-                                .addGap(18, 18, 18)
-                                .addComponent(MasukkanNama, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Kelola_Pengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(Background_atasLayout.createSequentialGroup()
+                                        .addComponent(Nama)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(MasukkanNama, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(Background_atasLayout.createSequentialGroup()
+                                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(Nama1)
+                                            .addComponent(Nama4))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(MasukkanEMAIL, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(MasukkanEMAIL2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(280, 280, 280))
                             .addGroup(Background_atasLayout.createSequentialGroup()
-                                .addComponent(Nama1)
-                                .addGap(18, 18, 18)
-                                .addComponent(MasukkanEMAIL, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(Background_atasLayout.createSequentialGroup()
-                        .addGap(396, 396, 396)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1280, Short.MAX_VALUE))
+                                .addGap(14, 14, 14)
+                                .addComponent(Kelola_Pengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Logo3)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Background_atasLayout.createSequentialGroup()
+                                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Nama3)
+                                    .addComponent(Nama2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(MasukkanNama1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(MasukkanEMAIL1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(Kelola_Pengguna1, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(233, 233, 233)))
+                .addContainerGap(499, Short.MAX_VALUE))
         );
         Background_atasLayout.setVerticalGroup(
             Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,22 +339,42 @@ public class profile extends javax.swing.JFrame {
                 .addComponent(garis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(107, 107, 107)
                 .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tempat_foto)
                     .addGroup(Background_atasLayout.createSequentialGroup()
-                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Kelola_Pengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Kelola_Pengguna, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Kelola_Pengguna1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Logo3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Logo2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
+                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Nama2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(MasukkanNama1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(MasukkanNama, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)
                         .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MasukkanNama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(26, 26, 26)
-                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(MasukkanEMAIL, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Nama1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(MasukkanEMAIL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(tempat_foto))
-                .addGap(34, 34, 34)
+                            .addGroup(Background_atasLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(Nama3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MasukkanEMAIL1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Background_atasLayout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addGroup(Background_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(MasukkanEMAIL2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Nama4, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(Background_atasLayout.createSequentialGroup()
+                                .addGap(59, 59, 59)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(570, Short.MAX_VALUE))
         );
 
         getContentPane().add(Background_atas, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 1810, 1080));
@@ -301,6 +409,22 @@ public class profile extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void MasukkanNama1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MasukkanNama1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MasukkanNama1ActionPerformed
+
+    private void MasukkanEMAIL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MasukkanEMAIL1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MasukkanEMAIL1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void MasukkanEMAIL2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MasukkanEMAIL2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MasukkanEMAIL2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -343,11 +467,19 @@ public class profile extends javax.swing.JFrame {
     private javax.swing.JPanel Background_atas;
     private javax.swing.JLabel Kasir;
     private javax.swing.JLabel Kelola_Pengguna;
+    private javax.swing.JLabel Kelola_Pengguna1;
     private javax.swing.JLabel Logo2;
+    private javax.swing.JLabel Logo3;
     private javax.swing.JTextField MasukkanEMAIL;
+    private javax.swing.JTextField MasukkanEMAIL1;
+    private javax.swing.JTextField MasukkanEMAIL2;
     private javax.swing.JTextField MasukkanNama;
+    private javax.swing.JTextField MasukkanNama1;
     private javax.swing.JLabel Nama;
     private javax.swing.JLabel Nama1;
+    private javax.swing.JLabel Nama2;
+    private javax.swing.JLabel Nama3;
+    private javax.swing.JLabel Nama4;
     private javax.swing.JLabel PROFILE;
     private javax.swing.JLabel PT_SMEA;
     private javax.swing.JButton Tombol_Dashboard;
@@ -357,6 +489,7 @@ public class profile extends javax.swing.JFrame {
     private javax.swing.JPanel garis;
     private javax.swing.JPanel garis_kasir;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel tempat_foto;
     // End of variables declaration//GEN-END:variables
 }
