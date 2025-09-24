@@ -11,7 +11,7 @@ package projectsakpore;
 public class pengaturan extends javax.swing.JFrame {
 
     /**
-     * Creates new form profil
+     * Creates new form 
      */
     public pengaturan() {
         initComponents();
